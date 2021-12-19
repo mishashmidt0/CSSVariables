@@ -11,7 +11,7 @@
 
 <body>
 
-    <h2 class="h2">Update CSS</h2>
+    <h2 class="CSS">Update CSS</h2>
 
     <div class='controls'>
         <label for="fon">Fon</label>
@@ -39,7 +39,7 @@
         function handleUpdate() {
             const suffix = (this.dataset.string || '');
             document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
-            
+
         }
 
         inputs.forEach(input => input.addEventListener('change', handleUpdate))
